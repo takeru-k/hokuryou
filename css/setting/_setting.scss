@@ -1,0 +1,40 @@
+/*---------------------------------
+
+  全体共通
+
+---------------------------------*/
+$container_size: 1024px;
+
+$pc: $container_size;
+
+$mq_pc: 'screen and (min-width: #{$container_size})';
+$mq_tab: 'screen and (max-width: 896px)';
+$mq_sp: 'screen and (max-width: 480px)';
+
+$color-main: #21D98F;
+$color-sub: #EDF8F6;
+$color-accent: #C8D921;
+$color-select: #21C6D9;
+
+body{
+  font-family: '秀英丸ゴシック B', '游ゴシック Medium', 'Yu Gothic Medium', '游ゴシック体', YuGothic, 'Hiragino Sans', 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, sans-serif;
+  color: #333;
+  font-feature-settings: "palt";
+}
+
+.inner{
+  max-width: 1200px;
+  padding-right: 6%;
+  padding-left: 6%;
+  margin: 0 auto;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+li{
+  list-style: none;
+}
+

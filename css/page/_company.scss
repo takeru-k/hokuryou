@@ -1,0 +1,81 @@
+/*---------------------------------
+
+  message
+
+---------------------------------*/
+.message{
+  margin: 60px 0;
+}
+
+.message-area{
+  max-width: 700px;
+  margin: 36px auto 0;
+}
+
+.message-txt{
+  margin-bottom: 16px;
+  line-height: 1.75;
+}
+
+.sign{
+  text-align: right;
+  padding-top: 16px;
+}
+
+/*---------------------------------
+
+  mission
+
+---------------------------------*/
+.mission{
+  padding: 60px 0;
+  background: $color-sub;
+}
+
+.mission-area{
+  max-width: 480px;
+  margin: 36px auto 0;
+  background: #fff;
+  padding: 24px;
+  border-radius: 16px;
+
+  li{
+    margin-bottom: 16px;
+  }
+}
+
+/*---------------------------------
+
+  summary
+
+---------------------------------*/
+.summary{
+  padding: 60px 0;
+
+  table{
+    text-align: left;
+    margin: 0 auto;
+    border-spacing: 16px 24px;
+  }
+
+  th{
+    color: $color-main;
+    padding-top: 16px;
+    vertical-align: top;
+  }
+
+  td{
+    padding-top: 16px;
+  }
+}
+
+.table-area{
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+@media #{$mq_sp}{
+  th, td{
+    display: block;
+  }
+}

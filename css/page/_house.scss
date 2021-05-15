@@ -1,0 +1,70 @@
+.intro-message{
+  padding-top: 60px;
+}
+
+.full{
+  background: $color-sub;
+  margin: 0 calc(50% - 50vw);
+  padding: 60px calc(50vw - 50% + 8px);
+  width: 100vw;
+}
+
+.merit{
+
+  .section-wrapper{
+    padding: 0;
+  }
+}
+
+.price{
+  padding: 60px 0;
+}
+
+.price-number{
+  font-size: 24px;
+  text-align: center;
+  margin-top: 16px;
+}
+
+.price-desc{
+  width: 250px;
+  margin: 24px auto;
+
+  ul{
+    margin-top: 8px;
+  }
+
+  li{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px dashed #999;
+    padding-bottom: 4px;
+    margin-bottom: 16px;
+  }
+}
+
+.annotation{
+  font-size: 14px;
+  padding-left:1em;
+  text-indent:-1em;
+}
+
+@media #{$mq_tab}{
+  .care-intro{
+    .section-txt{
+      text-align: center;
+    }
+  }
+}
+
+@media #{$mq_sp}{
+  .care-intro{
+    .section-txt{
+      text-align: left;
+    }
+  }
+
+  .price-desc{
+    width: 100%;
+  }
+}

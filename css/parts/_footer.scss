@@ -1,0 +1,51 @@
+.footer{
+  text-align: center;
+  padding: 64px 0 16px;
+}
+
+.footer-logo{
+  width: 150px;
+  margin: 0 auto;
+}
+
+.footer-items{
+  padding: 32px 0;
+  display: flex;
+  justify-content: center;
+
+
+  li{
+    margin: 8px 24px;
+
+    &:before{
+      content: "";
+      width: .5em;
+      height: .5em;
+      background: $color-main;
+      border-radius: 50%;
+      display:inline-block; 
+      vertical-align: middle;
+      margin-right: 8px;
+    }
+
+    a{
+      display:inline-block; 
+      vertical-align: middle;
+    }
+  }
+}
+
+.copy{
+  font-size: 0.9rem;
+  color: #666;
+}
+
+@media #{$mq_sp}{
+  .footer-items{
+    display: block;
+
+    li{
+      margin: 24px 0;
+    }
+  }
+}

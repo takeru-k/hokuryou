@@ -1,0 +1,84 @@
+/*---------------------------------
+
+  h2
+
+---------------------------------*/
+.section-ttl{
+  text-align: center;
+
+  span{
+    display: block;
+    letter-spacing: .2em;
+    font-size: 1rem;
+    color: $color-main;
+  }
+  
+
+  &__sub{
+    margin: 24px 0;
+    padding-left: 4px;
+    color: $color-main;
+    font-size: 30px;
+    line-height: 1.7;
+    letter-spacing: 0.1em;
+    text-align: center;
+    font-weight: bold;
+  }
+}
+
+.section-txt{
+  text-align: center;
+  margin-top: 8px;
+}
+
+@media #{$mq_tab}{
+  .section-txt{
+    text-align: left;
+    max-width: 568px;
+    margin: 8px auto 0;
+  }
+}
+
+@media #{$mq_sp}{
+  .section-ttl__sub{
+    font-size: 24px;
+    display: table;
+    margin: auto;
+    text-align: left;
+    padding-bottom: 16px;
+
+    br{
+      display: none;
+    }
+  }
+
+  .section-txt{
+    br{
+      display: none;
+    }
+  }
+}
+
+/*---------------------------------
+
+  h3
+
+---------------------------------*/
+.content-ttl{
+  color: $color-main;
+  position: relative;
+  padding-left: 15px;
+  border-bottom: 2px dotted $color-main;
+
+  &:before{
+    position: absolute;
+    top: 50%;
+    left:0;
+    transform:translateY(-50%);
+    content: '';
+    width: 10px;
+    height:10px;
+    background: $color-main;
+    border-radius:100%;
+  }
+}

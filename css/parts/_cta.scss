@@ -1,0 +1,68 @@
+.cta{
+  background: $color-accent;
+  color: #fff;
+  padding: 64px 0;
+}
+
+.cta-wrapper{
+  display: flex;
+  justify-content: center;
+}
+
+.cta-txtArea{
+  text-align: center;
+  padding: 0 32px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.cta-contactArea{
+  padding: 0 32px;
+}
+
+.tel{
+  font-size: 32px;
+  position: relative;
+  padding-left: 30px;
+
+  &:before{
+    position: absolute;
+    left: 0;
+    top: 10%;
+    content: "";
+    width: 25px;
+    height: 28px;
+    background: url(../images/tel.png) no-repeat center center/cover;
+  }
+}
+
+.hour{
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.cta-btn__std{
+  background: #fff;
+  color: $color-main;
+}
+
+@media #{$mq_tab}{
+  .cta-txtArea{
+    padding: 0;
+  }
+}
+
+@media #{$mq_sp}{
+  .cta-wrapper{
+    display: block;
+  }
+
+  .cta-ttl{
+    font-size: 20px;
+  }
+
+  .cta-contactArea{
+    padding-top: 16px;
+  }
+}

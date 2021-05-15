@@ -1,0 +1,158 @@
+/*---------------------------------
+
+  mv
+
+---------------------------------*/
+.mv{
+  background: url(../images/sample.jpg) no-repeat center center/cover;
+  height: 95vh;
+}
+
+.mv-ttl{
+  position: absolute;
+  top: 50%;
+  line-height: 2;
+}
+
+@media #{$mq_sp}{
+  .mv{
+    background: url(../images/sp-header.png) no-repeat center center/cover;
+  }
+
+  .mv-ttl{
+    position: absolute;
+    top: 50%;
+    line-height: 2;
+    text-shadow: 1px 1px 3px #fff;
+  }
+}
+
+/*---------------------------------
+
+  intro
+
+---------------------------------*/
+.intro{
+  padding: 60px 0;
+}
+
+/*---------------------------------
+
+  top-service
+
+---------------------------------*/
+.top-service{
+  padding-bottom: 60px;
+  background: $color-sub;
+  margin-top: 36px;
+  
+  .section-ttl{
+    position: relative;
+    top: -12px;
+  }
+}
+
+.section-contents{
+  display: flex;
+  justify-content: space-between;
+  padding: 60px 0;
+  overflow: hidden;
+  flex-wrap: wrap;
+}
+
+.care-item{
+  width: calc(100% / 3 - 22px - .1px);
+  margin-bottom: 64px;
+}
+
+
+
+
+.img-area{
+  width: 50%;
+
+  img{
+    border-radius: 4px;
+  }
+}
+
+.txt-area{
+  width: 45%;
+}
+
+.ttl-strong{
+  font-size: 24px;
+  margin: 16px 0;
+  letter-spacing: 0.1em;
+}
+
+.content-txt{
+  margin-top: 8px;
+  line-height: 1.75;
+}
+
+.order1{
+  order: 1;
+}
+
+.order2{
+  order: 2;
+}
+
+@media #{$mq_tab}{
+  .ttl-strong{
+    br{
+      display: none;
+    }
+  }
+}
+
+@media #{$mq_sp}{
+  .section-contents{
+    display: block;
+    padding: 32px 0;
+  }
+
+  .img-area{
+    width: 100%;
+    padding-bottom: 16px;
+  }
+
+  .txt-area{
+    width: 100%;
+  }
+
+  .ttl-strong{
+    font-size: 20px;
+  }
+}
+
+/*---------------------------------
+
+  top-company
+
+---------------------------------*/
+.top-company{
+  padding: 60px 0 96px;
+}
+
+.img-horizontal{
+  display: block;
+  margin: 0 auto;
+  padding: 24px 0;
+}
+
+/*---------------------------------
+
+  top-recruit
+
+---------------------------------*/
+.top-recruit{
+  padding-bottom: 60px;
+  background: $color-sub;
+
+  .section-ttl{
+    position: relative;
+    top: -12px;
+  }
+}
