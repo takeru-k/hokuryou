@@ -176,6 +176,18 @@ li {
   }
 }
 
+@media screen and (max-width: 896px) {
+  .sp-header {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .sp-header {
+    display: none;
+  }
+}
+
 /*---------------------------------
 
   sp-header
